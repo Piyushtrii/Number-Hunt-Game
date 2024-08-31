@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <p>Guess the number between 1 and 100</p>
+        <div class="game-area">
+            <input type="number" id="guess-input" placeholder="Enter your guess">
+            <button id="submit-btn">Check</button>
+        </div>
+        <p id="feedback"></p>
+        <p>You have <span id="chances-left">5</span> chances</p>
+        <button id="restart-btn" style="display:none;">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

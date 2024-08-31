@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3498db; /* Blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 350px;
+  width: 90%;
+}
+
+h1 {
+  color: #2c3e50; /* Darker blue for contrast */
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.game-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="number"], 
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="number"] {
+  background-color: #f9f9f9;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+#restart-btn {
+  background-color: #f44336;
+}
+
+#restart-btn:hover {
+  background-color: #d32f2f;
+}
+
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+#feedback.animate {
+  animation: pulse 0.5s ease-in-out;
+}
